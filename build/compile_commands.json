@@ -1,0 +1,49 @@
+[
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g   -o CMakeFiles/variadic.dir/variadic.cpp.o -c /home/kdeoliveira/app/c++/tutorial/variadic.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/variadic.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g   -o CMakeFiles/type_erasure.dir/type_erasure.cpp.o -c /home/kdeoliveira/app/c++/tutorial/type_erasure.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/type_erasure.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o multithread/CMakeFiles/posix_class.dir/posix_class.cpp.o -c /home/kdeoliveira/app/c++/tutorial/multithread/posix_class.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/multithread/posix_class.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o multithread/CMakeFiles/process.dir/process.cpp.o -c /home/kdeoliveira/app/c++/tutorial/multithread/process.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/multithread/process.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o multithread/CMakeFiles/posix_semaphore.dir/posix_semaphore.cpp.o -c /home/kdeoliveira/app/c++/tutorial/multithread/posix_semaphore.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/multithread/posix_semaphore.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o multithread/CMakeFiles/posix_thread.dir/posix_thread.cpp.o -c /home/kdeoliveira/app/c++/tutorial/multithread/posix_thread.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/multithread/posix_thread.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o multithread/CMakeFiles/multithread.dir/multithread.cpp.o -c /home/kdeoliveira/app/c++/tutorial/multithread/multithread.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/multithread/multithread.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o timer/CMakeFiles/pulse.dir/pulse.cpp.o -c /home/kdeoliveira/app/c++/tutorial/timer/pulse.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/timer/pulse.cpp"
+}
+]
