@@ -1,13 +1,13 @@
 [
 {
   "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g   -o CMakeFiles/variadic.dir/variadic.cpp.o -c /home/kdeoliveira/app/c++/tutorial/variadic.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/variadic.dir/variadic.cpp.o -c /home/kdeoliveira/app/c++/tutorial/variadic.cpp",
   "file": "/home/kdeoliveira/app/c++/tutorial/variadic.cpp"
 },
 
 {
   "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g   -o CMakeFiles/type_erasure.dir/type_erasure.cpp.o -c /home/kdeoliveira/app/c++/tutorial/type_erasure.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/type_erasure.dir/type_erasure.cpp.o -c /home/kdeoliveira/app/c++/tutorial/type_erasure.cpp",
   "file": "/home/kdeoliveira/app/c++/tutorial/type_erasure.cpp"
 },
 
@@ -45,5 +45,35 @@
   "directory": "/home/kdeoliveira/app/c++/tutorial/build",
   "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o timer/CMakeFiles/pulse.dir/pulse.cpp.o -c /home/kdeoliveira/app/c++/tutorial/timer/pulse.cpp",
   "file": "/home/kdeoliveira/app/c++/tutorial/timer/pulse.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/shared_mem_producer.dir/shared_mem_producer.cpp.o -c /home/kdeoliveira/app/c++/tutorial/ipc/shared_mem_producer.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/ipc/shared_mem_producer.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I../ipc  -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/shared_mem_consumer.dir/shared_mem_consumer.cpp.o -c /home/kdeoliveira/app/c++/tutorial/ipc/shared_mem_consumer.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/ipc/shared_mem_consumer.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/pipe_fork.dir/pipe_fork.cpp.o -c /home/kdeoliveira/app/c++/tutorial/ipc/pipe_fork.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/ipc/pipe_fork.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/signal_receive.dir/signal_receive.cpp.o -c /home/kdeoliveira/app/c++/tutorial/ipc/signal_receive.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/ipc/signal_receive.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/signal_event.dir/signal_event.cpp.o -c /home/kdeoliveira/app/c++/tutorial/ipc/signal_event.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/ipc/signal_event.cpp"
 }
 ]

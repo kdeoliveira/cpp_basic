@@ -49,3 +49,14 @@
 /home/kdeoliveira/app/c++/tutorial/build/timer/CMakeFiles/rebuild_cache.dir
 /home/kdeoliveira/app/c++/tutorial/build/timer/CMakeFiles/package.dir
 /home/kdeoliveira/app/c++/tutorial/build/timer/CMakeFiles/pulse.dir
+/home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/package_source.dir
+/home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/rebuild_cache.dir
+/home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/package.dir
+/home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/shared_mem_producer.dir
+/home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/shared_mem_consumer.dir
+/home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/pipe_fork.dir
+/home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/signal_receive.dir
+/home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/edit_cache.dir
+/home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/test.dir
+/home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/signal_event.dir
+/home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/shared_mem.dir

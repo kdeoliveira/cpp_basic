@@ -76,7 +76,7 @@ build cmake_object_order_depends_target_variadic: phony || CMakeFiles/variadic.d
 
 build CMakeFiles/variadic.dir/variadic.cpp.o: CXX_COMPILER__variadic ../variadic.cpp || cmake_object_order_depends_target_variadic
   DEP_FILE = CMakeFiles/variadic.dir/variadic.cpp.o.d
-  FLAGS = -std=c++17 -lpthread -lrt -g
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
   OBJECT_DIR = CMakeFiles/variadic.dir
   OBJECT_FILE_DIR = CMakeFiles/variadic.dir
 
@@ -89,7 +89,7 @@ build CMakeFiles/variadic.dir/variadic.cpp.o: CXX_COMPILER__variadic ../variadic
 # Link the executable variadic
 
 build variadic: CXX_EXECUTABLE_LINKER__variadic CMakeFiles/variadic.dir/variadic.cpp.o
-  FLAGS = -std=c++17 -lpthread -lrt -g
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
   LINK_FLAGS = -rdynamic
   OBJECT_DIR = CMakeFiles/variadic.dir
   POST_BUILD = :
@@ -299,7 +299,7 @@ build cmake_object_order_depends_target_type_erasure: phony || CMakeFiles/type_e
 
 build CMakeFiles/type_erasure.dir/type_erasure.cpp.o: CXX_COMPILER__type_erasure ../type_erasure.cpp || cmake_object_order_depends_target_type_erasure
   DEP_FILE = CMakeFiles/type_erasure.dir/type_erasure.cpp.o.d
-  FLAGS = -std=c++17 -lpthread -lrt -g
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
   OBJECT_DIR = CMakeFiles/type_erasure.dir
   OBJECT_FILE_DIR = CMakeFiles/type_erasure.dir
 
@@ -312,7 +312,7 @@ build CMakeFiles/type_erasure.dir/type_erasure.cpp.o: CXX_COMPILER__type_erasure
 # Link the executable type_erasure
 
 build type_erasure: CXX_EXECUTABLE_LINKER__type_erasure CMakeFiles/type_erasure.dir/type_erasure.cpp.o
-  FLAGS = -std=c++17 -lpthread -lrt -g
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = -lpthread
   OBJECT_DIR = CMakeFiles/type_erasure.dir
@@ -871,9 +871,265 @@ build timer/pulse: CXX_EXECUTABLE_LINKER__pulse timer/CMakeFiles/pulse.dir/pulse
   TARGET_PDB = pulse.dbg
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/kdeoliveira/app/c++/tutorial/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for package_source
+
+build ipc/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kdeoliveira/app/c++/tutorial/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build ipc/package_source: phony ipc/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build ipc/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build/ipc && /usr/bin/cmake -S/home/kdeoliveira/app/c++/tutorial -B/home/kdeoliveira/app/c++/tutorial/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build ipc/rebuild_cache: phony ipc/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for package
+
+build ipc/CMakeFiles/package.util: CUSTOM_COMMAND ipc/all
+  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build ipc/package: phony ipc/CMakeFiles/package.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target shared_mem_producer
+
+
+#############################################
+# Order-only phony target for shared_mem_producer
+
+build cmake_object_order_depends_target_shared_mem_producer: phony || ipc/CMakeFiles/shared_mem_producer.dir
+
+build ipc/CMakeFiles/shared_mem_producer.dir/shared_mem_producer.cpp.o: CXX_COMPILER__shared_mem_producer ../ipc/shared_mem_producer.cpp || cmake_object_order_depends_target_shared_mem_producer
+  DEP_FILE = ipc/CMakeFiles/shared_mem_producer.dir/shared_mem_producer.cpp.o.d
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
+  OBJECT_DIR = ipc/CMakeFiles/shared_mem_producer.dir
+  OBJECT_FILE_DIR = ipc/CMakeFiles/shared_mem_producer.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target shared_mem_producer
+
+
+#############################################
+# Link the executable ipc/shared_mem_producer
+
+build ipc/shared_mem_producer: CXX_EXECUTABLE_LINKER__shared_mem_producer ipc/CMakeFiles/shared_mem_producer.dir/shared_mem_producer.cpp.o
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = -lrt  -lpthread
+  OBJECT_DIR = ipc/CMakeFiles/shared_mem_producer.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ipc/shared_mem_producer
+  TARGET_PDB = shared_mem_producer.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target shared_mem_consumer
+
+
+#############################################
+# Order-only phony target for shared_mem_consumer
+
+build cmake_object_order_depends_target_shared_mem_consumer: phony || cmake_object_order_depends_target_shared_mem
+
+build ipc/CMakeFiles/shared_mem_consumer.dir/shared_mem_consumer.cpp.o: CXX_COMPILER__shared_mem_consumer ../ipc/shared_mem_consumer.cpp || cmake_object_order_depends_target_shared_mem_consumer
+  DEP_FILE = ipc/CMakeFiles/shared_mem_consumer.dir/shared_mem_consumer.cpp.o.d
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
+  INCLUDES = -I../ipc
+  OBJECT_DIR = ipc/CMakeFiles/shared_mem_consumer.dir
+  OBJECT_FILE_DIR = ipc/CMakeFiles/shared_mem_consumer.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target shared_mem_consumer
+
+
+#############################################
+# Link the executable ipc/shared_mem_consumer
+
+build ipc/shared_mem_consumer: CXX_EXECUTABLE_LINKER__shared_mem_consumer ipc/CMakeFiles/shared_mem_consumer.dir/shared_mem_consumer.cpp.o | ipc/libshared_mem.a || ipc/libshared_mem.a
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = ipc/libshared_mem.a  -lrt  -lpthread
+  OBJECT_DIR = ipc/CMakeFiles/shared_mem_consumer.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ipc/shared_mem_consumer
+  TARGET_PDB = shared_mem_consumer.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target pipe_fork
+
+
+#############################################
+# Order-only phony target for pipe_fork
+
+build cmake_object_order_depends_target_pipe_fork: phony || ipc/CMakeFiles/pipe_fork.dir
+
+build ipc/CMakeFiles/pipe_fork.dir/pipe_fork.cpp.o: CXX_COMPILER__pipe_fork ../ipc/pipe_fork.cpp || cmake_object_order_depends_target_pipe_fork
+  DEP_FILE = ipc/CMakeFiles/pipe_fork.dir/pipe_fork.cpp.o.d
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
+  OBJECT_DIR = ipc/CMakeFiles/pipe_fork.dir
+  OBJECT_FILE_DIR = ipc/CMakeFiles/pipe_fork.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pipe_fork
+
+
+#############################################
+# Link the executable ipc/pipe_fork
+
+build ipc/pipe_fork: CXX_EXECUTABLE_LINKER__pipe_fork ipc/CMakeFiles/pipe_fork.dir/pipe_fork.cpp.o
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = ipc/CMakeFiles/pipe_fork.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ipc/pipe_fork
+  TARGET_PDB = pipe_fork.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target signal_receive
+
+
+#############################################
+# Order-only phony target for signal_receive
+
+build cmake_object_order_depends_target_signal_receive: phony || ipc/CMakeFiles/signal_receive.dir
+
+build ipc/CMakeFiles/signal_receive.dir/signal_receive.cpp.o: CXX_COMPILER__signal_receive ../ipc/signal_receive.cpp || cmake_object_order_depends_target_signal_receive
+  DEP_FILE = ipc/CMakeFiles/signal_receive.dir/signal_receive.cpp.o.d
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
+  OBJECT_DIR = ipc/CMakeFiles/signal_receive.dir
+  OBJECT_FILE_DIR = ipc/CMakeFiles/signal_receive.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target signal_receive
+
+
+#############################################
+# Link the executable ipc/signal_receive
+
+build ipc/signal_receive: CXX_EXECUTABLE_LINKER__signal_receive ipc/CMakeFiles/signal_receive.dir/signal_receive.cpp.o
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = ipc/CMakeFiles/signal_receive.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ipc/signal_receive
+  TARGET_PDB = signal_receive.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build ipc/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build/ipc && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build ipc/edit_cache: phony ipc/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for test
+
+build ipc/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build/ipc && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build ipc/test: phony ipc/CMakeFiles/test.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target signal_event
+
+
+#############################################
+# Order-only phony target for signal_event
+
+build cmake_object_order_depends_target_signal_event: phony || ipc/CMakeFiles/signal_event.dir
+
+build ipc/CMakeFiles/signal_event.dir/signal_event.cpp.o: CXX_COMPILER__signal_event ../ipc/signal_event.cpp || cmake_object_order_depends_target_signal_event
+  DEP_FILE = ipc/CMakeFiles/signal_event.dir/signal_event.cpp.o.d
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
+  OBJECT_DIR = ipc/CMakeFiles/signal_event.dir
+  OBJECT_FILE_DIR = ipc/CMakeFiles/signal_event.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target signal_event
+
+
+#############################################
+# Link the executable ipc/signal_event
+
+build ipc/signal_event: CXX_EXECUTABLE_LINKER__signal_event ipc/CMakeFiles/signal_event.dir/signal_event.cpp.o
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = ipc/CMakeFiles/signal_event.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ipc/signal_event
+  TARGET_PDB = signal_event.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target shared_mem
+
+
+#############################################
+# Order-only phony target for shared_mem
+
+build cmake_object_order_depends_target_shared_mem: phony || ipc/CMakeFiles/shared_mem.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target shared_mem
+
+
+#############################################
+# Link the static library ipc/libshared_mem.a
+
+build ipc/libshared_mem.a: CXX_STATIC_LIBRARY_LINKER__shared_mem
+  LANGUAGE_COMPILE_FLAGS = -std=c++17 -lpthread -lrt -g -g
+  OBJECT_DIR = ipc/CMakeFiles/shared_mem.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ipc/libshared_mem.a
+  TARGET_PDB = shared_mem.a.dbg
+
+# =============================================================================
 # Target aliases.
 
+build libshared_mem.a: phony ipc/libshared_mem.a
+
 build multithread: phony multithread/multithread
+
+build pipe_fork: phony ipc/pipe_fork
 
 build posix_class: phony multithread/posix_class
 
@@ -885,6 +1141,16 @@ build process: phony multithread/process
 
 build pulse: phony timer/pulse
 
+build shared_mem: phony ipc/libshared_mem.a
+
+build shared_mem_consumer: phony ipc/shared_mem_consumer
+
+build shared_mem_producer: phony ipc/shared_mem_producer
+
+build signal_event: phony ipc/signal_event
+
+build signal_receive: phony ipc/signal_receive
+
 # =============================================================================
 # Folder targets.
 
@@ -893,7 +1159,14 @@ build pulse: phony timer/pulse
 #############################################
 # Folder: /home/kdeoliveira/app/c++/tutorial/build
 
-build all: phony variadic type_erasure multithread/all timer/all
+build all: phony variadic type_erasure multithread/all timer/all ipc/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/kdeoliveira/app/c++/tutorial/build/ipc
+
+build ipc/all: phony ipc/shared_mem_producer ipc/shared_mem_consumer ipc/pipe_fork ipc/signal_receive ipc/signal_event ipc/libshared_mem.a
 
 # =============================================================================
 
@@ -926,14 +1199,14 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../multithread/CMakeLists.txt ../timer/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../ipc/CMakeLists.txt ../multithread/CMakeLists.txt ../timer/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../multithread/CMakeLists.txt ../timer/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../ipc/CMakeLists.txt ../multithread/CMakeLists.txt ../timer/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
 
 
 #############################################

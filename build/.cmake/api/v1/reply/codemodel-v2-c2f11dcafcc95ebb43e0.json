@@ -9,7 +9,8 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -47,8 +48,8 @@
 						25,
 						26,
 						27,
-						34,
-						35
+						40,
+						41
 					]
 				},
 				{
@@ -63,10 +64,10 @@
 					"targetIndexes" : 
 					[
 						28,
-						29,
 						30,
 						31,
-						32
+						32,
+						33
 					]
 				},
 				{
@@ -80,7 +81,26 @@
 					"source" : "timer",
 					"targetIndexes" : 
 					[
-						33
+						34
+					]
+				},
+				{
+					"build" : "ipc",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "ipc",
+					"targetIndexes" : 
+					[
+						29,
+						35,
+						36,
+						37,
+						38,
+						39
 					]
 				}
 			],
@@ -92,7 +112,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					],
 					"name" : "tutorial",
 					"targetIndexes" : 
@@ -132,7 +153,13 @@
 						32,
 						33,
 						34,
-						35
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41
 					]
 				}
 			],
@@ -342,6 +369,13 @@
 					"projectIndex" : 0
 				},
 				{
+					"directoryIndex" : 3,
+					"id" : "pipe_fork::@bf1b951ff1f4b75d0804",
+					"jsonFile" : "target-pipe_fork-Debug-1d4a8762bef985142c1a.json",
+					"name" : "pipe_fork",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 1,
 					"id" : "posix_class::@9316ef7249714754f98b",
 					"jsonFile" : "target-posix_class-Debug-ca8c863a47fad7eb3907.json",
@@ -377,16 +411,51 @@
 					"projectIndex" : 0
 				},
 				{
+					"directoryIndex" : 3,
+					"id" : "shared_mem::@bf1b951ff1f4b75d0804",
+					"jsonFile" : "target-shared_mem-Debug-f904cfa6f3530a899087.json",
+					"name" : "shared_mem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "shared_mem_consumer::@bf1b951ff1f4b75d0804",
+					"jsonFile" : "target-shared_mem_consumer-Debug-ea6a7d35c5fb61feff4b.json",
+					"name" : "shared_mem_consumer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "shared_mem_producer::@bf1b951ff1f4b75d0804",
+					"jsonFile" : "target-shared_mem_producer-Debug-1e9cc6250417f9c2f443.json",
+					"name" : "shared_mem_producer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "signal_event::@bf1b951ff1f4b75d0804",
+					"jsonFile" : "target-signal_event-Debug-25b6de5094f120429097.json",
+					"name" : "signal_event",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "signal_receive::@bf1b951ff1f4b75d0804",
+					"jsonFile" : "target-signal_receive-Debug-92535f4f8ae402e15107.json",
+					"name" : "signal_receive",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 0,
 					"id" : "type_erasure::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-type_erasure-Debug-2d3e9a20b0876139b00a.json",
+					"jsonFile" : "target-type_erasure-Debug-0f0c8d2233550d7cc078.json",
 					"name" : "type_erasure",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "variadic::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-variadic-Debug-08f9222f461ed0e849d5.json",
+					"jsonFile" : "target-variadic-Debug-e07c6c616a600708a2b5.json",
 					"name" : "variadic",
 					"projectIndex" : 0
 				}

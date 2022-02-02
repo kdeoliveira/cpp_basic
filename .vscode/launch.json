@@ -13,7 +13,14 @@
             "request": "launch",
             // Resolved by CMake Tools:
             "program": "${command:cmake.launchTargetPath}",
-            "args": [],
+            "sourceFileMap": {
+                "/build/glibc-eX1tMB": "/home/kdeoliveira/opt/src"
+            },
+            "args": [
+                "-g",
+                "-save-temps",
+                "-Wall"
+            ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [
@@ -22,10 +29,6 @@
                     // it gets resolved by CMake Tools:
                     "name": "PATH",
                     "value": "${env:PATH}:${command:cmake.getLaunchTargetDirectory}"
-                },
-                {
-                    "name": "OTHER_VALUE",
-                    "value": "Something something"
                 }
             ],
             "externalConsole": true,

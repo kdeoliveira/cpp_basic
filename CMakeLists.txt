@@ -7,6 +7,8 @@ enable_testing()
 
 add_subdirectory(multithread)
 add_subdirectory(timer)
+add_subdirectory(ipc)
+
 
 add_executable(type_erasure type_erasure.cpp)
 add_executable(variadic variadic.cpp)
@@ -14,7 +16,7 @@ add_executable(variadic variadic.cpp)
 
 
 set(CMAKE_C_FLAGS_DEBUG "-lX11 -lGL -lpthread -lpng -lrt -lstdc++fs -std=c++17 -g")
-set(CMAKE_CXX_FLAGS "-std=c++17 -lpthread -lrt")
+set(CMAKE_CXX_FLAGS "-std=c++17 -lpthread -lrt -g")
 
 
 

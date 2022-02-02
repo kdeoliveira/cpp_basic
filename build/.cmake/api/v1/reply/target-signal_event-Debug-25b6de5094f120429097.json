@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "type_erasure"
+			"path" : "ipc/signal_event"
 		}
 	],
 	"backtrace" : 1,
@@ -14,7 +14,7 @@
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"ipc/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 11,
+				"line" : 12,
 				"parent" : 0
 			}
 		]
@@ -35,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=c++17 -lpthread -lrt -g  "
+					"fragment" : "-std=c++17 -lpthread -lrt -g -g  "
 				}
 			],
 			"language" : "CXX",
@@ -45,32 +45,28 @@
 			]
 		}
 	],
-	"id" : "type_erasure::@6890427a1f51a3e7e1df",
+	"id" : "signal_event::@bf1b951ff1f4b75d0804",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-std=c++17 -lpthread -lrt -g",
+				"fragment" : "-std=c++17 -lpthread -lrt -g -g",
 				"role" : "flags"
 			},
 			{
 				"fragment" : "-rdynamic",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lpthread",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "type_erasure",
-	"nameOnDisk" : "type_erasure",
+	"name" : "signal_event",
+	"nameOnDisk" : "signal_event",
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "ipc",
+		"source" : "ipc"
 	},
 	"sourceGroups" : 
 	[
@@ -87,7 +83,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "type_erasure.cpp",
+			"path" : "ipc/signal_event.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
