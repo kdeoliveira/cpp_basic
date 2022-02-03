@@ -7,6 +7,12 @@
 
 {
   "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/basics.dir/basics.cpp.o -c /home/kdeoliveira/app/c++/tutorial/basics.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/basics.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
   "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/type_erasure.dir/type_erasure.cpp.o -c /home/kdeoliveira/app/c++/tutorial/type_erasure.cpp",
   "file": "/home/kdeoliveira/app/c++/tutorial/type_erasure.cpp"
 },
@@ -15,12 +21,6 @@
   "directory": "/home/kdeoliveira/app/c++/tutorial/build",
   "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o multithread/CMakeFiles/posix_class.dir/posix_class.cpp.o -c /home/kdeoliveira/app/c++/tutorial/multithread/posix_class.cpp",
   "file": "/home/kdeoliveira/app/c++/tutorial/multithread/posix_class.cpp"
-},
-
-{
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o multithread/CMakeFiles/process.dir/process.cpp.o -c /home/kdeoliveira/app/c++/tutorial/multithread/process.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/multithread/process.cpp"
 },
 
 {
@@ -45,6 +45,12 @@
   "directory": "/home/kdeoliveira/app/c++/tutorial/build",
   "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o timer/CMakeFiles/pulse.dir/pulse.cpp.o -c /home/kdeoliveira/app/c++/tutorial/timer/pulse.cpp",
   "file": "/home/kdeoliveira/app/c++/tutorial/timer/pulse.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/message_queue.dir/message_queue.cpp.o -c /home/kdeoliveira/app/c++/tutorial/ipc/message_queue.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/ipc/message_queue.cpp"
 },
 
 {

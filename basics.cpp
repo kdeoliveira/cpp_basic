@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <stdio.h>
 
 using namespace std;
 
@@ -48,6 +49,29 @@ int main(){
     cout << foo << " and " << bar NEWLINE;
 
     cout << a NEWLINE;
+
+    
+    printf("Printf function with var: %d", 10);
+
+    //Note that if printf does not include \n, fflush must be made to force stdout to be outputted
+    fflush(stdout);
+
+    //Print and inserts new line
+    puts("Puts a string to stdout and inserts new line");
+
+    char input1[10];
+    char input2[10];
+    
+    // == NOTE == for stdin size of input must be provided to avoid buffer overflow
+    //Read a line from stdin to input
+    fgets(input2, 10, stdin);
+
+    //Read string and format to another set of string
+    sscanf(input2, "%s %s", input1, input2);
+    
+    //Print and inserts new line
+    puts(input1);
+    puts(input2);
 
     //Preprocessor function call
     cout << MIN(3,4) NEWLINE;

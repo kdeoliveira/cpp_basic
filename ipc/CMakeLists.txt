@@ -45,3 +45,11 @@ target_link_libraries(
 add_executable(
     pipe_fork pipe_fork.cpp
 )
+
+add_executable(
+    message_queue message_queue.cpp
+)
+
+target_link_libraries(
+    message_queue rt pthread
+)

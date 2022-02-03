@@ -15,6 +15,7 @@
 /home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/ExperimentalSubmit.dir
 /home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/Experimental.dir
 /home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/ContinuousCoverage.dir
+/home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/basics.dir
 /home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/ExperimentalConfigure.dir
 /home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/Continuous.dir
 /home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/Nightly.dir
@@ -36,7 +37,6 @@
 /home/kdeoliveira/app/c++/tutorial/build/multithread/CMakeFiles/edit_cache.dir
 /home/kdeoliveira/app/c++/tutorial/build/multithread/CMakeFiles/test.dir
 /home/kdeoliveira/app/c++/tutorial/build/multithread/CMakeFiles/posix_class.dir
-/home/kdeoliveira/app/c++/tutorial/build/multithread/CMakeFiles/process.dir
 /home/kdeoliveira/app/c++/tutorial/build/multithread/CMakeFiles/posix_semaphore.dir
 /home/kdeoliveira/app/c++/tutorial/build/multithread/CMakeFiles/package_source.dir
 /home/kdeoliveira/app/c++/tutorial/build/multithread/CMakeFiles/posix_thread.dir
@@ -52,6 +52,7 @@
 /home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/package_source.dir
 /home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/rebuild_cache.dir
 /home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/package.dir
+/home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/message_queue.dir
 /home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/shared_mem_producer.dir
 /home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/shared_mem_consumer.dir
 /home/kdeoliveira/app/c++/tutorial/build/ipc/CMakeFiles/pipe_fork.dir

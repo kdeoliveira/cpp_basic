@@ -48,8 +48,9 @@
 						25,
 						26,
 						27,
-						40,
-						41
+						28,
+						41,
+						42
 					]
 				},
 				{
@@ -63,11 +64,10 @@
 					"source" : "multithread",
 					"targetIndexes" : 
 					[
-						28,
 						30,
-						31,
 						32,
-						33
+						33,
+						34
 					]
 				},
 				{
@@ -81,7 +81,7 @@
 					"source" : "timer",
 					"targetIndexes" : 
 					[
-						34
+						35
 					]
 				},
 				{
@@ -96,11 +96,12 @@
 					"targetIndexes" : 
 					[
 						29,
-						35,
+						31,
 						36,
 						37,
 						38,
-						39
+						39,
+						40
 					]
 				}
 			],
@@ -159,7 +160,8 @@
 						38,
 						39,
 						40,
-						41
+						41,
+						42
 					]
 				}
 			],
@@ -362,6 +364,20 @@
 					"projectIndex" : 0
 				},
 				{
+					"directoryIndex" : 0,
+					"id" : "basics::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-basics-Debug-7902c3e327ecd36be622.json",
+					"name" : "basics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "message_queue::@bf1b951ff1f4b75d0804",
+					"jsonFile" : "target-message_queue-Debug-90f6dc5476ce4647d106.json",
+					"name" : "message_queue",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 1,
 					"id" : "multithread::@9316ef7249714754f98b",
 					"jsonFile" : "target-multithread-Debug-90ecc0fe17ea6279d078.json",
@@ -394,13 +410,6 @@
 					"id" : "posix_thread::@9316ef7249714754f98b",
 					"jsonFile" : "target-posix_thread-Debug-fb47a24e8500593cbee3.json",
 					"name" : "posix_thread",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 1,
-					"id" : "process::@9316ef7249714754f98b",
-					"jsonFile" : "target-process-Debug-4c831dece7233b433f2d.json",
-					"name" : "process",
 					"projectIndex" : 0
 				},
 				{

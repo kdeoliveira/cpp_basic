@@ -4,7 +4,6 @@ add_executable(multithread multithread.cpp)
 add_executable(posix_thread posix_thread.cpp)
 add_executable(posix_semaphore posix_semaphore.cpp)
 add_executable(posix_class posix_class.cpp)
-add_executable(process process.cpp)
 
 
 

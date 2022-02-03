@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "multithread/process"
+			"path" : "basics"
 		}
 	],
 	"backtrace" : 1,
@@ -14,7 +14,7 @@
 		],
 		"files" : 
 		[
-			"multithread/CMakeLists.txt"
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 15,
 				"parent" : 0
 			}
 		]
@@ -35,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g  "
+					"fragment" : "-std=c++17 -lpthread -lrt -g -g  "
 				}
 			],
 			"language" : "CXX",
@@ -45,13 +45,13 @@
 			]
 		}
 	],
-	"id" : "process::@9316ef7249714754f98b",
+	"id" : "basics::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-std=c++17 -lpthread -lrt -g -g",
 				"role" : "flags"
 			},
 			{
@@ -61,12 +61,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "process",
-	"nameOnDisk" : "process",
+	"name" : "basics",
+	"nameOnDisk" : "basics",
 	"paths" : 
 	{
-		"build" : "multithread",
-		"source" : "multithread"
+		"build" : ".",
+		"source" : "."
 	},
 	"sourceGroups" : 
 	[
@@ -83,7 +83,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "multithread/process.cpp",
+			"path" : "basics.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
