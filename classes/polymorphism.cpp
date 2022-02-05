@@ -43,7 +43,9 @@ int main(){
     //Polymmorphism is used through pointers
 
     A* a = new B();
- 
+    
+
+    // Use dynamic_cast for downcasting classes
 
     a->set(5,5);
 

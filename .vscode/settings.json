@@ -52,6 +52,7 @@
         "typeinfo": "cpp",
         "bit": "cpp",
         "any": "cpp",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "cstring": "cpp"
     }
 }

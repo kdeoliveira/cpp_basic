@@ -139,9 +139,16 @@ int main(){
         
         msg.msg_type = 1;
 
-        memcpy(
-            msg.data, "Kevin de Oliveira", sizeof(char)*18
-        );
+
+        printf("String to data: ");
+        fflush(stdout);
+
+        fgets(msg.data, BUFFER_SIZE, stdin);
+        
+
+        // memcpy(
+        //     msg.data, "Kevin de Oliveira", sizeof(char)*18
+        // );
 
         //sends message to mqueue descriptor at priority 5 (priority are set for messages inside the queue)
         // mq_send suspend current process if queue is full (for NONBLOCKING mq_send fails)
