@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/multithread.dir/multithread.cpp.o  -o multithread  -lpthread 

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dev/app/cpp_basic/multithread/posix_thread.cpp
+pthread.h
+-
+stdio.h
+-
+cstdlib
+-
+iostream
+-
+

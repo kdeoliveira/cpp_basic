@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++17 -lpthread -lrt -g -g  -rdynamic CMakeFiles/signal_receive.dir/signal_receive.cpp.o  -o signal_receive 

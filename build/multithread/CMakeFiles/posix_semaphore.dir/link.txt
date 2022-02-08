@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/posix_semaphore.dir/posix_semaphore.cpp.o  -o posix_semaphore  -lpthread 

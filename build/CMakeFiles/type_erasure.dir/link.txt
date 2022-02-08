@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++17 -lpthread -lrt -g -g  -rdynamic CMakeFiles/type_erasure.dir/type_erasure.cpp.o  -o type_erasure  -lpthread 

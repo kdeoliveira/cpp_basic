@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dev/app/cpp_basic/ipc/message_queue.cpp
+stdio.h
+-
+unistd.h
+-
+sys/wait.h
+-
+sys/types.h
+-
+errno.h
+-
+cstring
+-
+mqueue.h
+-
+cstdlib
+-
+

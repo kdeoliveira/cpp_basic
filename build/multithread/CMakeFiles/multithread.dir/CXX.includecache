@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dev/app/cpp_basic/multithread/multithread.cpp
+mutex
+-
+thread
+-
+stdio.h
+-
+iostream
+-
+condition_variable
+-
+

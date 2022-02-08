@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dev/app/cpp_basic/ipc/signal_event.cpp
+cstdlib
+-
+csignal
+-
+iostream
+-
+unistd.h
+-
+sys/types.h
+-
+

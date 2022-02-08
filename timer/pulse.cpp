@@ -79,16 +79,28 @@ int main(int argv, char * argc[]){
     setupTimer();
 
     //In case of kill, use this set in order to wait for incoming signal
-    // sigset_t set;
+    sigset_t set;
+    sigemptyset(&set);
+    sigaddset(&set, SIGALRM);
+
     // siginfo_t info;
 
     // sigemptyset(&set);
     // sigaddset(&set, SIGALRM);
+
+    //When using sigwait, block signal on this thread
     // sigprocmask(SIG_BLOCK, &set, nullptr);
+
+
     // sigwaitinfo(&set, &info);
 
     //While to get signal hanler calls
     while(true){
+        //Alternative to sigaction; Suspend this thread via sigwait and rerun on signal
+        //Note that sigwait will disable any signal handler registered
+        // int sig_result;
+        // sigwait(&set, &sig_result);
+        
     }
 
     return EXIT_SUCCESS;

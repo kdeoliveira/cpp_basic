@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/posix_thread.dir/posix_thread.cpp.o  -o posix_thread  -lpthread 

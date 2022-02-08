@@ -1,4 +1,4 @@
-# Install script for directory: /home/kdeoliveira/app/c++/tutorial
+# Install script for directory: /home/dev/app/cpp_basic
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/kdeoliveira/app/c++/tutorial/build/multithread/cmake_install.cmake")
-  include("/home/kdeoliveira/app/c++/tutorial/build/timer/cmake_install.cmake")
-  include("/home/kdeoliveira/app/c++/tutorial/build/ipc/cmake_install.cmake")
+  include("/home/dev/app/cpp_basic/build/multithread/cmake_install.cmake")
+  include("/home/dev/app/cpp_basic/build/timer/cmake_install.cmake")
+  include("/home/dev/app/cpp_basic/build/ipc/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kdeoliveira/app/c++/tutorial/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dev/app/cpp_basic/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dev/app/cpp_basic/ipc/signal_receive.cpp
+signal.h
+-
+unistd.h
+-
+iostream
+-
+sys/types.h
+-
+pthread.h
+-
+

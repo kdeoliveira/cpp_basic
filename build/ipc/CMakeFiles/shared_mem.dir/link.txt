@@ -1,0 +1,2 @@
+/usr/bin/ar qc libshared_mem.a  
+/usr/bin/ranlib libshared_mem.a
