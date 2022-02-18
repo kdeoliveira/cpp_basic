@@ -10,6 +10,19 @@
 #include <utility>
 #include <tuple>
 
+//Lambda definition:
+// int fn(int(*lamda_fn)()){
+//     return lamda_fn(arg);
+// }
+// or
+// template<typename T>
+// int fn(T lambda_fn)
+// {
+//     return lambda_fn(arg);
+// }
+
+
+
 // Template Metaprogramming - Gets parameters of templates in a reflective way at compile time
 // Base case/struct template represents a function or callable object
 template <typename Function>
@@ -60,6 +73,7 @@ struct function_traits<ReturnType (ClassType::*)(Arguments...)> : function_trait
 {
 };
 
+// RAII (Resource Aquisition) idiom with class wrappers
 // Callback wrapper that represents all Types of callbacks (type erasure)
 struct CallbackWrapper
 {

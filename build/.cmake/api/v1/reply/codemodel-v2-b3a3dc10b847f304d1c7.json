@@ -50,7 +50,8 @@
 						27,
 						28,
 						41,
-						42
+						42,
+						43
 					]
 				},
 				{
@@ -161,7 +162,8 @@
 						39,
 						40,
 						41,
-						42
+						42,
+						43
 					]
 				}
 			],
@@ -459,6 +461,13 @@
 					"id" : "type_erasure::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-type_erasure-Debug-0f0c8d2233550d7cc078.json",
 					"name" : "type_erasure",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "type_erasure_idioms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-type_erasure_idioms-Debug-02b5a3397b61da42a70e.json",
+					"name" : "type_erasure_idioms",
 					"projectIndex" : 0
 				},
 				{

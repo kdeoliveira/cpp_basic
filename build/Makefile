@@ -144,6 +144,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named type_erasure_idioms
+
+# Build rule for target.
+type_erasure_idioms: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 type_erasure_idioms
+.PHONY : type_erasure_idioms
+
+# fast build rule for target.
+type_erasure_idioms/fast:
+	$(MAKE) -f CMakeFiles/type_erasure_idioms.dir/build.make CMakeFiles/type_erasure_idioms.dir/build
+.PHONY : type_erasure_idioms/fast
+
+#=============================================================================
 # Target rules for targets named variadic
 
 # Build rule for target.
@@ -756,6 +769,33 @@ type_erasure.cpp.s:
 	$(MAKE) -f CMakeFiles/type_erasure.dir/build.make CMakeFiles/type_erasure.dir/type_erasure.cpp.s
 .PHONY : type_erasure.cpp.s
 
+type_erasure_idioms.o: type_erasure_idioms.cpp.o
+
+.PHONY : type_erasure_idioms.o
+
+# target to build an object file
+type_erasure_idioms.cpp.o:
+	$(MAKE) -f CMakeFiles/type_erasure_idioms.dir/build.make CMakeFiles/type_erasure_idioms.dir/type_erasure_idioms.cpp.o
+.PHONY : type_erasure_idioms.cpp.o
+
+type_erasure_idioms.i: type_erasure_idioms.cpp.i
+
+.PHONY : type_erasure_idioms.i
+
+# target to preprocess a source file
+type_erasure_idioms.cpp.i:
+	$(MAKE) -f CMakeFiles/type_erasure_idioms.dir/build.make CMakeFiles/type_erasure_idioms.dir/type_erasure_idioms.cpp.i
+.PHONY : type_erasure_idioms.cpp.i
+
+type_erasure_idioms.s: type_erasure_idioms.cpp.s
+
+.PHONY : type_erasure_idioms.s
+
+# target to generate assembly for a file
+type_erasure_idioms.cpp.s:
+	$(MAKE) -f CMakeFiles/type_erasure_idioms.dir/build.make CMakeFiles/type_erasure_idioms.dir/type_erasure_idioms.cpp.s
+.PHONY : type_erasure_idioms.cpp.s
+
 variadic.o: variadic.cpp.o
 
 .PHONY : variadic.o
@@ -792,6 +832,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... package_source"
+	@echo "... type_erasure_idioms"
 	@echo "... variadic"
 	@echo "... edit_cache"
 	@echo "... NightlyMemCheck"
@@ -843,6 +884,9 @@ help:
 	@echo "... type_erasure.o"
 	@echo "... type_erasure.i"
 	@echo "... type_erasure.s"
+	@echo "... type_erasure_idioms.o"
+	@echo "... type_erasure_idioms.i"
+	@echo "... type_erasure_idioms.s"
 	@echo "... variadic.o"
 	@echo "... variadic.i"
 	@echo "... variadic.s"

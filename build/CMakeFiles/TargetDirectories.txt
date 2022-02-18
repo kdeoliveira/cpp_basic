@@ -1,6 +1,7 @@
 /home/dev/app/cpp_basic/build/CMakeFiles/rebuild_cache.dir
 /home/dev/app/cpp_basic/build/CMakeFiles/test.dir
 /home/dev/app/cpp_basic/build/CMakeFiles/package_source.dir
+/home/dev/app/cpp_basic/build/CMakeFiles/type_erasure_idioms.dir
 /home/dev/app/cpp_basic/build/CMakeFiles/variadic.dir
 /home/dev/app/cpp_basic/build/CMakeFiles/edit_cache.dir
 /home/dev/app/cpp_basic/build/CMakeFiles/NightlyMemCheck.dir

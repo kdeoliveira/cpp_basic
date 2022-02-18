@@ -13,6 +13,7 @@ add_subdirectory(ipc)
 add_executable(type_erasure type_erasure.cpp)
 add_executable(variadic variadic.cpp)
 add_executable(basics basics.cpp)
+add_executable(type_erasure_idioms type_erasure_idioms.cpp)
 
 
 

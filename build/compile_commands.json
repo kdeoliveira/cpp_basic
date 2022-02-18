@@ -1,6 +1,11 @@
 [
 {
   "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/type_erasure_idioms.dir/type_erasure_idioms.cpp.o -c /home/dev/app/cpp_basic/type_erasure_idioms.cpp",
+  "file": "/home/dev/app/cpp_basic/type_erasure_idioms.cpp"
+},
+{
+  "directory": "/home/dev/app/cpp_basic/build",
   "command": "/usr/bin/c++    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/variadic.dir/variadic.cpp.o -c /home/dev/app/cpp_basic/variadic.cpp",
   "file": "/home/dev/app/cpp_basic/variadic.cpp"
 },

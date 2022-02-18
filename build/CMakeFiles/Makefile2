@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/dev/app/cpp_basic/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/type_erasure_idioms.dir/all
 all: CMakeFiles/variadic.dir/all
 all: CMakeFiles/basics.dir/all
 all: CMakeFiles/type_erasure.dir/all
@@ -70,6 +71,7 @@ preinstall: ipc/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/type_erasure_idioms.dir/clean
 clean: CMakeFiles/variadic.dir/clean
 clean: CMakeFiles/NightlyMemCheck.dir/clean
 clean: CMakeFiles/NightlyTest.dir/clean
@@ -180,13 +182,40 @@ timer/clean: timer/CMakeFiles/pulse.dir/clean
 .PHONY : timer/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/type_erasure_idioms.dir
+
+# All Build rule for target.
+CMakeFiles/type_erasure_idioms.dir/all:
+	$(MAKE) -f CMakeFiles/type_erasure_idioms.dir/build.make CMakeFiles/type_erasure_idioms.dir/depend
+	$(MAKE) -f CMakeFiles/type_erasure_idioms.dir/build.make CMakeFiles/type_erasure_idioms.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/app/cpp_basic/build/CMakeFiles --progress-num=28,29 "Built target type_erasure_idioms"
+.PHONY : CMakeFiles/type_erasure_idioms.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/type_erasure_idioms.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/app/cpp_basic/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/type_erasure_idioms.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/app/cpp_basic/build/CMakeFiles 0
+.PHONY : CMakeFiles/type_erasure_idioms.dir/rule
+
+# Convenience name for target.
+type_erasure_idioms: CMakeFiles/type_erasure_idioms.dir/rule
+
+.PHONY : type_erasure_idioms
+
+# clean rule for target.
+CMakeFiles/type_erasure_idioms.dir/clean:
+	$(MAKE) -f CMakeFiles/type_erasure_idioms.dir/build.make CMakeFiles/type_erasure_idioms.dir/clean
+.PHONY : CMakeFiles/type_erasure_idioms.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/variadic.dir
 
 # All Build rule for target.
 CMakeFiles/variadic.dir/all:
 	$(MAKE) -f CMakeFiles/variadic.dir/build.make CMakeFiles/variadic.dir/depend
 	$(MAKE) -f CMakeFiles/variadic.dir/build.make CMakeFiles/variadic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/app/cpp_basic/build/CMakeFiles --progress-num=28,29 "Built target variadic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/app/cpp_basic/build/CMakeFiles --progress-num=30,31 "Built target variadic"
 .PHONY : CMakeFiles/variadic.dir/all
 
 # Build rule for subdir invocation for target.
