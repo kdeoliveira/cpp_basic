@@ -57,5 +57,8 @@ std::string shared_mem_path = "shared_mem_path";
     sem_close(shared_mem_object->semaphore1);
     sem_close(shared_mem_object->semaphore2);
 
+    //mumap in order to deletes the mappings for the specified address range
+    munmap(shared_mem_object, sizeof(*shared_mem_object));
+
     return EXIT_SUCCESS;
 }

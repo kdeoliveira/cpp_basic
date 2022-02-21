@@ -66,6 +66,38 @@ build CMakeFiles/package_source.util: CUSTOM_COMMAND
 build package_source: phony CMakeFiles/package_source.util
 
 # =============================================================================
+# Object build statements for EXECUTABLE target type_erasure_proxy
+
+
+#############################################
+# Order-only phony target for type_erasure_proxy
+
+build cmake_object_order_depends_target_type_erasure_proxy: phony || CMakeFiles/type_erasure_proxy.dir
+
+build CMakeFiles/type_erasure_proxy.dir/type_erasure_proxy.cpp.o: CXX_COMPILER__type_erasure_proxy ../type_erasure_proxy.cpp || cmake_object_order_depends_target_type_erasure_proxy
+  DEP_FILE = CMakeFiles/type_erasure_proxy.dir/type_erasure_proxy.cpp.o.d
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
+  OBJECT_DIR = CMakeFiles/type_erasure_proxy.dir
+  OBJECT_FILE_DIR = CMakeFiles/type_erasure_proxy.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target type_erasure_proxy
+
+
+#############################################
+# Link the executable type_erasure_proxy
+
+build type_erasure_proxy: CXX_EXECUTABLE_LINKER__type_erasure_proxy CMakeFiles/type_erasure_proxy.dir/type_erasure_proxy.cpp.o
+  FLAGS = -std=c++17 -lpthread -lrt -g -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = CMakeFiles/type_erasure_proxy.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = type_erasure_proxy
+  TARGET_PDB = type_erasure_proxy.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target type_erasure_idioms
 
 
@@ -79,8 +111,6 @@ build CMakeFiles/type_erasure_idioms.dir/type_erasure_idioms.cpp.o: CXX_COMPILER
   FLAGS = -std=c++17 -lpthread -lrt -g -g
   OBJECT_DIR = CMakeFiles/type_erasure_idioms.dir
   OBJECT_FILE_DIR = CMakeFiles/type_erasure_idioms.dir
-  TARGET_COMPILE_PDB = CMakeFiles/type_erasure_idioms.dir/
-  TARGET_PDB = type_erasure_idioms.pdb
 
 
 # =============================================================================
@@ -96,9 +126,8 @@ build type_erasure_idioms: CXX_EXECUTABLE_LINKER__type_erasure_idioms CMakeFiles
   OBJECT_DIR = CMakeFiles/type_erasure_idioms.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/type_erasure_idioms.dir/
   TARGET_FILE = type_erasure_idioms
-  TARGET_PDB = type_erasure_idioms.pdb
+  TARGET_PDB = type_erasure_idioms.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target variadic
@@ -114,8 +143,6 @@ build CMakeFiles/variadic.dir/variadic.cpp.o: CXX_COMPILER__variadic ../variadic
   FLAGS = -std=c++17 -lpthread -lrt -g -g
   OBJECT_DIR = CMakeFiles/variadic.dir
   OBJECT_FILE_DIR = CMakeFiles/variadic.dir
-  TARGET_COMPILE_PDB = CMakeFiles/variadic.dir/
-  TARGET_PDB = variadic.pdb
 
 
 # =============================================================================
@@ -131,9 +158,8 @@ build variadic: CXX_EXECUTABLE_LINKER__variadic CMakeFiles/variadic.dir/variadic
   OBJECT_DIR = CMakeFiles/variadic.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/variadic.dir/
   TARGET_FILE = variadic
-  TARGET_PDB = variadic.pdb
+  TARGET_PDB = variadic.dbg
 
 
 #############################################
@@ -232,8 +258,6 @@ build CMakeFiles/basics.dir/basics.cpp.o: CXX_COMPILER__basics ../basics.cpp || 
   FLAGS = -std=c++17 -lpthread -lrt -g -g
   OBJECT_DIR = CMakeFiles/basics.dir
   OBJECT_FILE_DIR = CMakeFiles/basics.dir
-  TARGET_COMPILE_PDB = CMakeFiles/basics.dir/
-  TARGET_PDB = basics.pdb
 
 
 # =============================================================================
@@ -249,9 +273,8 @@ build basics: CXX_EXECUTABLE_LINKER__basics CMakeFiles/basics.dir/basics.cpp.o
   OBJECT_DIR = CMakeFiles/basics.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/basics.dir/
   TARGET_FILE = basics
-  TARGET_PDB = basics.pdb
+  TARGET_PDB = basics.dbg
 
 
 #############################################
@@ -375,8 +398,6 @@ build CMakeFiles/type_erasure.dir/type_erasure.cpp.o: CXX_COMPILER__type_erasure
   FLAGS = -std=c++17 -lpthread -lrt -g -g
   OBJECT_DIR = CMakeFiles/type_erasure.dir
   OBJECT_FILE_DIR = CMakeFiles/type_erasure.dir
-  TARGET_COMPILE_PDB = CMakeFiles/type_erasure.dir/
-  TARGET_PDB = type_erasure.pdb
 
 
 # =============================================================================
@@ -393,9 +414,8 @@ build type_erasure: CXX_EXECUTABLE_LINKER__type_erasure CMakeFiles/type_erasure.
   OBJECT_DIR = CMakeFiles/type_erasure.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/type_erasure.dir/
   TARGET_FILE = type_erasure
-  TARGET_PDB = type_erasure.pdb
+  TARGET_PDB = type_erasure.dbg
 
 
 #############################################
@@ -663,8 +683,6 @@ build multithread/CMakeFiles/posix_class.dir/posix_class.cpp.o: CXX_COMPILER__po
   FLAGS = -g
   OBJECT_DIR = multithread/CMakeFiles/posix_class.dir
   OBJECT_FILE_DIR = multithread/CMakeFiles/posix_class.dir
-  TARGET_COMPILE_PDB = multithread/CMakeFiles/posix_class.dir/
-  TARGET_PDB = multithread/posix_class.pdb
 
 
 # =============================================================================
@@ -681,9 +699,8 @@ build multithread/posix_class: CXX_EXECUTABLE_LINKER__posix_class multithread/CM
   OBJECT_DIR = multithread/CMakeFiles/posix_class.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = multithread/CMakeFiles/posix_class.dir/
   TARGET_FILE = multithread/posix_class
-  TARGET_PDB = multithread/posix_class.pdb
+  TARGET_PDB = posix_class.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target posix_semaphore
@@ -699,8 +716,6 @@ build multithread/CMakeFiles/posix_semaphore.dir/posix_semaphore.cpp.o: CXX_COMP
   FLAGS = -g
   OBJECT_DIR = multithread/CMakeFiles/posix_semaphore.dir
   OBJECT_FILE_DIR = multithread/CMakeFiles/posix_semaphore.dir
-  TARGET_COMPILE_PDB = multithread/CMakeFiles/posix_semaphore.dir/
-  TARGET_PDB = multithread/posix_semaphore.pdb
 
 
 # =============================================================================
@@ -717,9 +732,8 @@ build multithread/posix_semaphore: CXX_EXECUTABLE_LINKER__posix_semaphore multit
   OBJECT_DIR = multithread/CMakeFiles/posix_semaphore.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = multithread/CMakeFiles/posix_semaphore.dir/
   TARGET_FILE = multithread/posix_semaphore
-  TARGET_PDB = multithread/posix_semaphore.pdb
+  TARGET_PDB = posix_semaphore.dbg
 
 
 #############################################
@@ -747,8 +761,6 @@ build multithread/CMakeFiles/posix_thread.dir/posix_thread.cpp.o: CXX_COMPILER__
   FLAGS = -g
   OBJECT_DIR = multithread/CMakeFiles/posix_thread.dir
   OBJECT_FILE_DIR = multithread/CMakeFiles/posix_thread.dir
-  TARGET_COMPILE_PDB = multithread/CMakeFiles/posix_thread.dir/
-  TARGET_PDB = multithread/posix_thread.pdb
 
 
 # =============================================================================
@@ -765,9 +777,8 @@ build multithread/posix_thread: CXX_EXECUTABLE_LINKER__posix_thread multithread/
   OBJECT_DIR = multithread/CMakeFiles/posix_thread.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = multithread/CMakeFiles/posix_thread.dir/
   TARGET_FILE = multithread/posix_thread
-  TARGET_PDB = multithread/posix_thread.pdb
+  TARGET_PDB = posix_thread.dbg
 
 
 #############################################
@@ -807,8 +818,6 @@ build multithread/CMakeFiles/multithread.dir/multithread.cpp.o: CXX_COMPILER__mu
   FLAGS = -g
   OBJECT_DIR = multithread/CMakeFiles/multithread.dir
   OBJECT_FILE_DIR = multithread/CMakeFiles/multithread.dir
-  TARGET_COMPILE_PDB = multithread/CMakeFiles/multithread.dir/
-  TARGET_PDB = multithread/multithread.pdb
 
 
 # =============================================================================
@@ -825,9 +834,8 @@ build multithread/multithread: CXX_EXECUTABLE_LINKER__multithread multithread/CM
   OBJECT_DIR = multithread/CMakeFiles/multithread.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = multithread/CMakeFiles/multithread.dir/
   TARGET_FILE = multithread/multithread
-  TARGET_PDB = multithread/multithread.pdb
+  TARGET_PDB = multithread.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -907,8 +915,6 @@ build timer/CMakeFiles/pulse.dir/pulse.cpp.o: CXX_COMPILER__pulse ../timer/pulse
   FLAGS = -g
   OBJECT_DIR = timer/CMakeFiles/pulse.dir
   OBJECT_FILE_DIR = timer/CMakeFiles/pulse.dir
-  TARGET_COMPILE_PDB = timer/CMakeFiles/pulse.dir/
-  TARGET_PDB = timer/pulse.pdb
 
 
 # =============================================================================
@@ -925,9 +931,8 @@ build timer/pulse: CXX_EXECUTABLE_LINKER__pulse timer/CMakeFiles/pulse.dir/pulse
   OBJECT_DIR = timer/CMakeFiles/pulse.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = timer/CMakeFiles/pulse.dir/
   TARGET_FILE = timer/pulse
-  TARGET_PDB = timer/pulse.pdb
+  TARGET_PDB = pulse.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -984,8 +989,6 @@ build ipc/CMakeFiles/message_queue.dir/message_queue.cpp.o: CXX_COMPILER__messag
   FLAGS = -std=c++17 -lpthread -lrt -g -g
   OBJECT_DIR = ipc/CMakeFiles/message_queue.dir
   OBJECT_FILE_DIR = ipc/CMakeFiles/message_queue.dir
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/message_queue.dir/
-  TARGET_PDB = ipc/message_queue.pdb
 
 
 # =============================================================================
@@ -1002,9 +1005,8 @@ build ipc/message_queue: CXX_EXECUTABLE_LINKER__message_queue ipc/CMakeFiles/mes
   OBJECT_DIR = ipc/CMakeFiles/message_queue.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/message_queue.dir/
   TARGET_FILE = ipc/message_queue
-  TARGET_PDB = ipc/message_queue.pdb
+  TARGET_PDB = message_queue.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target shared_mem_producer
@@ -1020,8 +1022,6 @@ build ipc/CMakeFiles/shared_mem_producer.dir/shared_mem_producer.cpp.o: CXX_COMP
   FLAGS = -std=c++17 -lpthread -lrt -g -g
   OBJECT_DIR = ipc/CMakeFiles/shared_mem_producer.dir
   OBJECT_FILE_DIR = ipc/CMakeFiles/shared_mem_producer.dir
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/shared_mem_producer.dir/
-  TARGET_PDB = ipc/shared_mem_producer.pdb
 
 
 # =============================================================================
@@ -1038,9 +1038,8 @@ build ipc/shared_mem_producer: CXX_EXECUTABLE_LINKER__shared_mem_producer ipc/CM
   OBJECT_DIR = ipc/CMakeFiles/shared_mem_producer.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/shared_mem_producer.dir/
   TARGET_FILE = ipc/shared_mem_producer
-  TARGET_PDB = ipc/shared_mem_producer.pdb
+  TARGET_PDB = shared_mem_producer.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target shared_mem_consumer
@@ -1057,8 +1056,6 @@ build ipc/CMakeFiles/shared_mem_consumer.dir/shared_mem_consumer.cpp.o: CXX_COMP
   INCLUDES = -I../ipc
   OBJECT_DIR = ipc/CMakeFiles/shared_mem_consumer.dir
   OBJECT_FILE_DIR = ipc/CMakeFiles/shared_mem_consumer.dir
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/shared_mem_consumer.dir/
-  TARGET_PDB = ipc/shared_mem_consumer.pdb
 
 
 # =============================================================================
@@ -1075,9 +1072,8 @@ build ipc/shared_mem_consumer: CXX_EXECUTABLE_LINKER__shared_mem_consumer ipc/CM
   OBJECT_DIR = ipc/CMakeFiles/shared_mem_consumer.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/shared_mem_consumer.dir/
   TARGET_FILE = ipc/shared_mem_consumer
-  TARGET_PDB = ipc/shared_mem_consumer.pdb
+  TARGET_PDB = shared_mem_consumer.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target pipe_fork
@@ -1093,8 +1089,6 @@ build ipc/CMakeFiles/pipe_fork.dir/pipe_fork.cpp.o: CXX_COMPILER__pipe_fork ../i
   FLAGS = -std=c++17 -lpthread -lrt -g -g
   OBJECT_DIR = ipc/CMakeFiles/pipe_fork.dir
   OBJECT_FILE_DIR = ipc/CMakeFiles/pipe_fork.dir
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/pipe_fork.dir/
-  TARGET_PDB = ipc/pipe_fork.pdb
 
 
 # =============================================================================
@@ -1110,9 +1104,8 @@ build ipc/pipe_fork: CXX_EXECUTABLE_LINKER__pipe_fork ipc/CMakeFiles/pipe_fork.d
   OBJECT_DIR = ipc/CMakeFiles/pipe_fork.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/pipe_fork.dir/
   TARGET_FILE = ipc/pipe_fork
-  TARGET_PDB = ipc/pipe_fork.pdb
+  TARGET_PDB = pipe_fork.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target signal_receive
@@ -1128,8 +1121,6 @@ build ipc/CMakeFiles/signal_receive.dir/signal_receive.cpp.o: CXX_COMPILER__sign
   FLAGS = -std=c++17 -lpthread -lrt -g -g
   OBJECT_DIR = ipc/CMakeFiles/signal_receive.dir
   OBJECT_FILE_DIR = ipc/CMakeFiles/signal_receive.dir
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/signal_receive.dir/
-  TARGET_PDB = ipc/signal_receive.pdb
 
 
 # =============================================================================
@@ -1145,9 +1136,8 @@ build ipc/signal_receive: CXX_EXECUTABLE_LINKER__signal_receive ipc/CMakeFiles/s
   OBJECT_DIR = ipc/CMakeFiles/signal_receive.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/signal_receive.dir/
   TARGET_FILE = ipc/signal_receive
-  TARGET_PDB = ipc/signal_receive.pdb
+  TARGET_PDB = signal_receive.dbg
 
 
 #############################################
@@ -1186,8 +1176,6 @@ build ipc/CMakeFiles/signal_event.dir/signal_event.cpp.o: CXX_COMPILER__signal_e
   FLAGS = -std=c++17 -lpthread -lrt -g -g
   OBJECT_DIR = ipc/CMakeFiles/signal_event.dir
   OBJECT_FILE_DIR = ipc/CMakeFiles/signal_event.dir
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/signal_event.dir/
-  TARGET_PDB = ipc/signal_event.pdb
 
 
 # =============================================================================
@@ -1203,9 +1191,8 @@ build ipc/signal_event: CXX_EXECUTABLE_LINKER__signal_event ipc/CMakeFiles/signa
   OBJECT_DIR = ipc/CMakeFiles/signal_event.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/signal_event.dir/
   TARGET_FILE = ipc/signal_event
-  TARGET_PDB = ipc/signal_event.pdb
+  TARGET_PDB = signal_event.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target shared_mem
@@ -1229,9 +1216,8 @@ build ipc/libshared_mem.a: CXX_STATIC_LIBRARY_LINKER__shared_mem
   OBJECT_DIR = ipc/CMakeFiles/shared_mem.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = ipc/CMakeFiles/shared_mem.dir/shared_mem.pdb
   TARGET_FILE = ipc/libshared_mem.a
-  TARGET_PDB = ipc/libshared_mem.pdb
+  TARGET_PDB = shared_mem.a.dbg
 
 # =============================================================================
 # Target aliases.
@@ -1270,7 +1256,7 @@ build signal_receive: phony ipc/signal_receive
 #############################################
 # Folder: /home/kdeoliveira/app/c++/tutorial/build
 
-build all: phony type_erasure_idioms variadic basics type_erasure multithread/all timer/all ipc/all
+build all: phony type_erasure_proxy type_erasure_idioms variadic basics type_erasure multithread/all timer/all ipc/all
 
 # =============================================================================
 
@@ -1310,14 +1296,14 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../ipc/CMakeLists.txt ../multithread/CMakeLists.txt ../timer/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.16/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.16/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.16/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.16/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.16/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.16/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.16/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../ipc/CMakeLists.txt ../multithread/CMakeLists.txt ../timer/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../ipc/CMakeLists.txt ../multithread/CMakeLists.txt ../timer/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.16/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.16/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.16/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.16/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.16/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.16/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.16/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../ipc/CMakeLists.txt ../multithread/CMakeLists.txt ../timer/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
 
 
 #############################################

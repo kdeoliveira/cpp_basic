@@ -51,5 +51,7 @@ int main()
     // Unlink the shared memory for this process
     shm_unlink(shared_mem_path.c_str());
 
+    munmap(shared_mem_object, sizeof(*shared_mem_object));
+
     return EXIT_SUCCESS;
 }

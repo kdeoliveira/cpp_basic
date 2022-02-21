@@ -1,6 +1,12 @@
 [
 {
   "directory": "/home/kdeoliveira/app/c++/tutorial/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/type_erasure_proxy.dir/type_erasure_proxy.cpp.o -c /home/kdeoliveira/app/c++/tutorial/type_erasure_proxy.cpp",
+  "file": "/home/kdeoliveira/app/c++/tutorial/type_erasure_proxy.cpp"
+},
+
+{
+  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
   "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/type_erasure_idioms.dir/type_erasure_idioms.cpp.o -c /home/kdeoliveira/app/c++/tutorial/type_erasure_idioms.cpp",
   "file": "/home/kdeoliveira/app/c++/tutorial/type_erasure_idioms.cpp"
 },

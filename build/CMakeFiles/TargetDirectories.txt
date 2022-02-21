@@ -1,6 +1,7 @@
 /home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/rebuild_cache.dir
 /home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/test.dir
 /home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/package_source.dir
+/home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/type_erasure_proxy.dir
 /home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/type_erasure_idioms.dir
 /home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/variadic.dir
 /home/kdeoliveira/app/c++/tutorial/build/CMakeFiles/edit_cache.dir
