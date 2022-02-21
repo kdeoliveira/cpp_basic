@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++17 -lpthread -lrt -g -g  -rdynamic CMakeFiles/shared_mem_consumer.dir/shared_mem_consumer.cpp.o  -o shared_mem_consumer  libshared_mem.a -lrt -lpthread 

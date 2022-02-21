@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/dev/app/cpp_basic
-# Build directory: /home/dev/app/cpp_basic/build
+# Source directory: /home/kdeoliveira/app/c++/tutorial
+# Build directory: /home/kdeoliveira/app/c++/tutorial/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

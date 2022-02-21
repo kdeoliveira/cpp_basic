@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++17 -lpthread -lrt -g -g  -rdynamic CMakeFiles/type_erasure_idioms.dir/type_erasure_idioms.cpp.o  -o type_erasure_idioms 

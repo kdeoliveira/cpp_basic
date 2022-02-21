@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++17 -lpthread -lrt -g -g  -rdynamic CMakeFiles/shared_mem_producer.dir/shared_mem_producer.cpp.o  -o shared_mem_producer  -lrt -lpthread 

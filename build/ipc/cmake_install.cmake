@@ -1,4 +1,4 @@
-# Install script for directory: /home/dev/app/cpp_basic/ipc
+# Install script for directory: /home/kdeoliveira/app/c++/tutorial/ipc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

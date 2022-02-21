@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/dev/app/cpp_basic/ipc
-# Build directory: /home/dev/app/cpp_basic/build/ipc
+# Source directory: /home/kdeoliveira/app/c++/tutorial/ipc
+# Build directory: /home/kdeoliveira/app/c++/tutorial/build/ipc
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

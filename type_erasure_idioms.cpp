@@ -13,21 +13,21 @@
 
 //Main class wrapper that encapsulates and hide all type erasure implementation
 
+#include <memory>
+
 class MainWrapper{
     public:
         template<typename T>
         //Removes any reference passed via T (const, &, pointers, ...)
         //Gets/Deduce the type of _wrapped and forwards to template T
-        MainWrapper(T&& _wrapped) : wrapped_object{std::forward<typename std::remove_reference<T>::type>(_wrapped)} {}
+        MainWrapper(T&& _wrapped) : wrapped_object{
+            std::make_unique<WrapperCase<typename std::remove_reference<T>::type>>( std::forward<T>(_wrapped) )} {}
         MainWrapper() = delete;
 
         void execute_fn() {
             return this->wrapped_object->execute_fn();
         }
 
-        ~MainWrapper(){
-            delete wrapped_object;
-        }
 
     private:
         //Type erasure concept which holds the common implementation among classes
@@ -40,22 +40,18 @@ class MainWrapper{
         template<typename T>
         class WrapperCase : public BaseCase{
             private:
-                T* object;
+                T object;
             public:
-                WrapperCase(const T* _object) : object{_object}{}
+                WrapperCase(const T& _object) : object{_object}{}
                 const void execute_fn() const {
                     return this->object->execute_fn();
                 }
 
                 WrapperCase() = delete;
 
-                ~WrapperCase(){
-                    delete object;
-                }
-
         };
 
-        BaseCase* wrapped_object;
+        std::unique_ptr<BaseCase> wrapped_object;
 
 
 };
