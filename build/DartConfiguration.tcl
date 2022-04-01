@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/kdeoliveira/app/c++/tutorial
-BuildDirectory: /home/kdeoliveira/app/c++/tutorial/build
+SourceDirectory: /home/dev/app/cpp_basic
+BuildDirectory: /home/dev/app/cpp_basic/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -14,7 +14,7 @@ CostDataFile:
 Site: kdeoliveira
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-x86_64-linux-gnu-g++-9
+BuildName: Linux-c++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/kdeoliveira/app/c++/tutorial"
+ConfigureCommand: "/usr/bin/cmake" "/home/dev/app/cpp_basic"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: /bin/x86_64-linux-gnu-g++-9
-CompilerVersion: 9.3.0
+Compiler: /usr/bin/c++
+CompilerVersion: 9.4.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

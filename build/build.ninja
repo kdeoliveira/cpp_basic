@@ -34,7 +34,7 @@ include rules.ninja
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/cmake -S/home/kdeoliveira/app/c++/tutorial -B/home/kdeoliveira/app/c++/tutorial/build
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/cmake -S/home/dev/app/cpp_basic -B/home/dev/app/cpp_basic/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -46,7 +46,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for test
 
 build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -58,7 +58,7 @@ build test: phony CMakeFiles/test.util
 # Utility command for package_source
 
 build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kdeoliveira/app/c++/tutorial/build/CPackSourceConfig.cmake
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/dev/app/cpp_basic/build/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -166,7 +166,7 @@ build variadic: CXX_EXECUTABLE_LINKER__variadic CMakeFiles/variadic.dir/variadic
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -329,7 +329,7 @@ build ExperimentalStart: phony CMakeFiles/ExperimentalStart
 # Utility command for package
 
 build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -422,7 +422,7 @@ build type_erasure: CXX_EXECUTABLE_LINKER__type_erasure CMakeFiles/type_erasure.
 # Custom command for CMakeFiles/NightlyMemCheck
 
 build CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D NightlyMemCheck
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D NightlyMemCheck
   pool = console
 
 
@@ -430,7 +430,7 @@ build CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
 # Custom command for CMakeFiles/NightlyTest
 
 build CMakeFiles/NightlyTest: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D NightlyTest
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D NightlyTest
   pool = console
 
 
@@ -438,7 +438,7 @@ build CMakeFiles/NightlyTest: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ContinuousConfigure
 
 build CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ContinuousConfigure
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ContinuousConfigure
   pool = console
 
 
@@ -446,7 +446,7 @@ build CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ContinuousBuild
 
 build CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ContinuousBuild
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ContinuousBuild
   pool = console
 
 
@@ -454,7 +454,7 @@ build CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
 # Custom command for CMakeFiles/NightlyConfigure
 
 build CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D NightlyConfigure
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D NightlyConfigure
   pool = console
 
 
@@ -462,7 +462,7 @@ build CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ExperimentalTest
 
 build CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ExperimentalTest
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ExperimentalTest
   pool = console
 
 
@@ -470,7 +470,7 @@ build CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ContinuousUpdate
 
 build CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ContinuousUpdate
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ContinuousUpdate
   pool = console
 
 
@@ -478,7 +478,7 @@ build CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
 # Custom command for CMakeFiles/NightlyUpdate
 
 build CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D NightlyUpdate
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D NightlyUpdate
   pool = console
 
 
@@ -486,7 +486,7 @@ build CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ExperimentalMemCheck
 
 build CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ExperimentalMemCheck
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ExperimentalMemCheck
   pool = console
 
 
@@ -494,7 +494,7 @@ build CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ExperimentalSubmit
 
 build CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ExperimentalSubmit
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ExperimentalSubmit
   pool = console
 
 
@@ -502,7 +502,7 @@ build CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
 # Custom command for CMakeFiles/Experimental
 
 build CMakeFiles/Experimental: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D Experimental
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D Experimental
   pool = console
 
 
@@ -510,7 +510,7 @@ build CMakeFiles/Experimental: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ContinuousCoverage
 
 build CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ContinuousCoverage
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ContinuousCoverage
   pool = console
 
 
@@ -518,7 +518,7 @@ build CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ExperimentalConfigure
 
 build CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ExperimentalConfigure
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ExperimentalConfigure
   pool = console
 
 
@@ -526,7 +526,7 @@ build CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
 # Custom command for CMakeFiles/Continuous
 
 build CMakeFiles/Continuous: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D Continuous
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D Continuous
   pool = console
 
 
@@ -534,7 +534,7 @@ build CMakeFiles/Continuous: CUSTOM_COMMAND
 # Custom command for CMakeFiles/Nightly
 
 build CMakeFiles/Nightly: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D Nightly
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D Nightly
   pool = console
 
 
@@ -542,7 +542,7 @@ build CMakeFiles/Nightly: CUSTOM_COMMAND
 # Custom command for CMakeFiles/NightlySubmit
 
 build CMakeFiles/NightlySubmit: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D NightlySubmit
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D NightlySubmit
   pool = console
 
 
@@ -550,7 +550,7 @@ build CMakeFiles/NightlySubmit: CUSTOM_COMMAND
 # Custom command for CMakeFiles/NightlyStart
 
 build CMakeFiles/NightlyStart: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D NightlyStart
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D NightlyStart
   pool = console
 
 
@@ -558,7 +558,7 @@ build CMakeFiles/NightlyStart: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ExperimentalCoverage
 
 build CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ExperimentalCoverage
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ExperimentalCoverage
   pool = console
 
 
@@ -566,7 +566,7 @@ build CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
 # Custom command for CMakeFiles/NightlyCoverage
 
 build CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D NightlyCoverage
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D NightlyCoverage
   pool = console
 
 
@@ -574,7 +574,7 @@ build CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ExperimentalStart
 
 build CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ExperimentalStart
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ExperimentalStart
   pool = console
 
 
@@ -582,7 +582,7 @@ build CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
 # Custom command for CMakeFiles/NightlyBuild
 
 build CMakeFiles/NightlyBuild: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D NightlyBuild
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D NightlyBuild
   pool = console
 
 
@@ -590,7 +590,7 @@ build CMakeFiles/NightlyBuild: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ExperimentalBuild
 
 build CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ExperimentalBuild
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ExperimentalBuild
   pool = console
 
 
@@ -598,7 +598,7 @@ build CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ExperimentalUpdate
 
 build CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ExperimentalUpdate
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ExperimentalUpdate
   pool = console
 
 
@@ -606,7 +606,7 @@ build CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ContinuousStart
 
 build CMakeFiles/ContinuousStart: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ContinuousStart
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ContinuousStart
   pool = console
 
 
@@ -614,7 +614,7 @@ build CMakeFiles/ContinuousStart: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ContinuousMemCheck
 
 build CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ContinuousMemCheck
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ContinuousMemCheck
   pool = console
 
 
@@ -622,7 +622,7 @@ build CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ContinuousTest
 
 build CMakeFiles/ContinuousTest: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ContinuousTest
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ContinuousTest
   pool = console
 
 
@@ -630,7 +630,7 @@ build CMakeFiles/ContinuousTest: CUSTOM_COMMAND
 # Custom command for CMakeFiles/ContinuousSubmit
 
 build CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D ContinuousSubmit
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D ContinuousSubmit
   pool = console
 
 
@@ -638,12 +638,12 @@ build CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
 # Custom command for CMakeFiles/NightlyMemoryCheck
 
 build CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/ctest -D NightlyMemoryCheck
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/ctest -D NightlyMemoryCheck
   pool = console
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/kdeoliveira/app/c++/tutorial/CMakeLists.txt
+# /home/dev/app/cpp_basic/CMakeLists.txt
 # =============================================================================
 
 
@@ -651,7 +651,7 @@ build CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
 # Utility command for edit_cache
 
 build multithread/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build/multithread && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/dev/app/cpp_basic/build/multithread && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -662,7 +662,7 @@ build multithread/edit_cache: phony multithread/CMakeFiles/edit_cache.util
 # Utility command for test
 
 build multithread/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build/multithread && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/dev/app/cpp_basic/build/multithread && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -740,7 +740,7 @@ build multithread/posix_semaphore: CXX_EXECUTABLE_LINKER__posix_semaphore multit
 # Utility command for package_source
 
 build multithread/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kdeoliveira/app/c++/tutorial/build/CPackSourceConfig.cmake
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/dev/app/cpp_basic/build/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -785,7 +785,7 @@ build multithread/posix_thread: CXX_EXECUTABLE_LINKER__posix_thread multithread/
 # Utility command for rebuild_cache
 
 build multithread/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build/multithread && /usr/bin/cmake -S/home/kdeoliveira/app/c++/tutorial -B/home/kdeoliveira/app/c++/tutorial/build
+  COMMAND = cd /home/dev/app/cpp_basic/build/multithread && /usr/bin/cmake -S/home/dev/app/cpp_basic -B/home/dev/app/cpp_basic/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -797,7 +797,7 @@ build multithread/rebuild_cache: phony multithread/CMakeFiles/rebuild_cache.util
 # Utility command for package
 
 build multithread/CMakeFiles/package.util: CUSTOM_COMMAND multithread/all
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -839,7 +839,7 @@ build multithread/multithread: CXX_EXECUTABLE_LINKER__multithread multithread/CM
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/kdeoliveira/app/c++/tutorial/CMakeLists.txt
+# /home/dev/app/cpp_basic/CMakeLists.txt
 # =============================================================================
 
 
@@ -847,7 +847,7 @@ build multithread/multithread: CXX_EXECUTABLE_LINKER__multithread multithread/CM
 # Utility command for edit_cache
 
 build timer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build/timer && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/dev/app/cpp_basic/build/timer && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -858,7 +858,7 @@ build timer/edit_cache: phony timer/CMakeFiles/edit_cache.util
 # Utility command for test
 
 build timer/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build/timer && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/dev/app/cpp_basic/build/timer && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -870,7 +870,7 @@ build timer/test: phony timer/CMakeFiles/test.util
 # Utility command for package_source
 
 build timer/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kdeoliveira/app/c++/tutorial/build/CPackSourceConfig.cmake
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/dev/app/cpp_basic/build/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -882,7 +882,7 @@ build timer/package_source: phony timer/CMakeFiles/package_source.util
 # Utility command for rebuild_cache
 
 build timer/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build/timer && /usr/bin/cmake -S/home/kdeoliveira/app/c++/tutorial -B/home/kdeoliveira/app/c++/tutorial/build
+  COMMAND = cd /home/dev/app/cpp_basic/build/timer && /usr/bin/cmake -S/home/dev/app/cpp_basic -B/home/dev/app/cpp_basic/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -894,7 +894,7 @@ build timer/rebuild_cache: phony timer/CMakeFiles/rebuild_cache.util
 # Utility command for package
 
 build timer/CMakeFiles/package.util: CUSTOM_COMMAND timer/all
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -936,7 +936,7 @@ build timer/pulse: CXX_EXECUTABLE_LINKER__pulse timer/CMakeFiles/pulse.dir/pulse
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/kdeoliveira/app/c++/tutorial/CMakeLists.txt
+# /home/dev/app/cpp_basic/CMakeLists.txt
 # =============================================================================
 
 
@@ -944,7 +944,7 @@ build timer/pulse: CXX_EXECUTABLE_LINKER__pulse timer/CMakeFiles/pulse.dir/pulse
 # Utility command for package_source
 
 build ipc/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kdeoliveira/app/c++/tutorial/build/CPackSourceConfig.cmake
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/dev/app/cpp_basic/build/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -956,7 +956,7 @@ build ipc/package_source: phony ipc/CMakeFiles/package_source.util
 # Utility command for rebuild_cache
 
 build ipc/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build/ipc && /usr/bin/cmake -S/home/kdeoliveira/app/c++/tutorial -B/home/kdeoliveira/app/c++/tutorial/build
+  COMMAND = cd /home/dev/app/cpp_basic/build/ipc && /usr/bin/cmake -S/home/dev/app/cpp_basic -B/home/dev/app/cpp_basic/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -968,7 +968,7 @@ build ipc/rebuild_cache: phony ipc/CMakeFiles/rebuild_cache.util
 # Utility command for package
 
 build ipc/CMakeFiles/package.util: CUSTOM_COMMAND ipc/all
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -1144,7 +1144,7 @@ build ipc/signal_receive: CXX_EXECUTABLE_LINKER__signal_receive ipc/CMakeFiles/s
 # Utility command for edit_cache
 
 build ipc/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build/ipc && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/dev/app/cpp_basic/build/ipc && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1155,7 +1155,7 @@ build ipc/edit_cache: phony ipc/CMakeFiles/edit_cache.util
 # Utility command for test
 
 build ipc/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kdeoliveira/app/c++/tutorial/build/ipc && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/dev/app/cpp_basic/build/ipc && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -1220,7 +1220,137 @@ build ipc/libshared_mem.a: CXX_STATIC_LIBRARY_LINKER__shared_mem
   TARGET_PDB = shared_mem.a.dbg
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/dev/app/cpp_basic/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for package_source
+
+build stdlib/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/dev/app/cpp_basic/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build stdlib/package_source: phony stdlib/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build stdlib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/dev/app/cpp_basic/build/stdlib && /usr/bin/cmake -S/home/dev/app/cpp_basic -B/home/dev/app/cpp_basic/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build stdlib/rebuild_cache: phony stdlib/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for package
+
+build stdlib/CMakeFiles/package.util: CUSTOM_COMMAND stdlib/all
+  COMMAND = cd /home/dev/app/cpp_basic/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build stdlib/package: phony stdlib/CMakeFiles/package.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target stream
+
+
+#############################################
+# Order-only phony target for stream
+
+build cmake_object_order_depends_target_stream: phony || stdlib/CMakeFiles/stream.dir
+
+build stdlib/CMakeFiles/stream.dir/stream.cpp.o: CXX_COMPILER__stream ../stdlib/stream.cpp || cmake_object_order_depends_target_stream
+  DEP_FILE = stdlib/CMakeFiles/stream.dir/stream.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = stdlib/CMakeFiles/stream.dir
+  OBJECT_FILE_DIR = stdlib/CMakeFiles/stream.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target stream
+
+
+#############################################
+# Link the executable stdlib/stream
+
+build stdlib/stream: CXX_EXECUTABLE_LINKER__stream stdlib/CMakeFiles/stream.dir/stream.cpp.o
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = stdlib/CMakeFiles/stream.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = stdlib/stream
+  TARGET_PDB = stream.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build stdlib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/dev/app/cpp_basic/build/stdlib && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build stdlib/edit_cache: phony stdlib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for test
+
+build stdlib/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/dev/app/cpp_basic/build/stdlib && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build stdlib/test: phony stdlib/CMakeFiles/test.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target algorithm
+
+
+#############################################
+# Order-only phony target for algorithm
+
+build cmake_object_order_depends_target_algorithm: phony || stdlib/CMakeFiles/algorithm.dir
+
+build stdlib/CMakeFiles/algorithm.dir/algorithm.cpp.o: CXX_COMPILER__algorithm ../stdlib/algorithm.cpp || cmake_object_order_depends_target_algorithm
+  DEP_FILE = stdlib/CMakeFiles/algorithm.dir/algorithm.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = stdlib/CMakeFiles/algorithm.dir
+  OBJECT_FILE_DIR = stdlib/CMakeFiles/algorithm.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target algorithm
+
+
+#############################################
+# Link the executable stdlib/algorithm
+
+build stdlib/algorithm: CXX_EXECUTABLE_LINKER__algorithm stdlib/CMakeFiles/algorithm.dir/algorithm.cpp.o
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = stdlib/CMakeFiles/algorithm.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = stdlib/algorithm
+  TARGET_PDB = algorithm.dbg
+
+# =============================================================================
 # Target aliases.
+
+build algorithm: phony stdlib/algorithm
 
 build libshared_mem.a: phony ipc/libshared_mem.a
 
@@ -1248,34 +1378,43 @@ build signal_event: phony ipc/signal_event
 
 build signal_receive: phony ipc/signal_receive
 
+build stream: phony stdlib/stream
+
 # =============================================================================
 # Folder targets.
 
 # =============================================================================
 
 #############################################
-# Folder: /home/kdeoliveira/app/c++/tutorial/build
+# Folder: /home/dev/app/cpp_basic/build
 
-build all: phony type_erasure_proxy type_erasure_idioms variadic basics type_erasure multithread/all timer/all ipc/all
+build all: phony type_erasure_proxy type_erasure_idioms variadic basics type_erasure multithread/all timer/all ipc/all stdlib/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/kdeoliveira/app/c++/tutorial/build/ipc
+# Folder: /home/dev/app/cpp_basic/build/ipc
 
 build ipc/all: phony ipc/message_queue ipc/shared_mem_producer ipc/shared_mem_consumer ipc/pipe_fork ipc/signal_receive ipc/signal_event ipc/libshared_mem.a
 
 # =============================================================================
 
 #############################################
-# Folder: /home/kdeoliveira/app/c++/tutorial/build/multithread
+# Folder: /home/dev/app/cpp_basic/build/multithread
 
 build multithread/all: phony multithread/posix_class multithread/posix_semaphore multithread/posix_thread multithread/multithread
 
 # =============================================================================
 
 #############################################
-# Folder: /home/kdeoliveira/app/c++/tutorial/build/timer
+# Folder: /home/dev/app/cpp_basic/build/stdlib
+
+build stdlib/all: phony stdlib/stream stdlib/algorithm
+
+# =============================================================================
+
+#############################################
+# Folder: /home/dev/app/cpp_basic/build/timer
 
 build timer/all: phony timer/pulse
 
@@ -1296,14 +1435,14 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../ipc/CMakeLists.txt ../multithread/CMakeLists.txt ../timer/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../ipc/CMakeLists.txt ../multithread/CMakeLists.txt ../stdlib/CMakeLists.txt ../timer/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../ipc/CMakeLists.txt ../multithread/CMakeLists.txt ../timer/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../ipc/CMakeLists.txt ../multithread/CMakeLists.txt ../stdlib/CMakeLists.txt ../timer/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
 
 
 #############################################

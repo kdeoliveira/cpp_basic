@@ -1,4 +1,4 @@
-# Install script for directory: /home/kdeoliveira/app/c++/tutorial/multithread
+# Install script for directory: /home/dev/app/cpp_basic/multithread
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

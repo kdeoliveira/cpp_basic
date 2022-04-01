@@ -18,6 +18,7 @@ add_executable(type_erasure_proxy type_erasure_proxy.cpp)
 
 
 
+add_subdirectory(stdlib)
 
 set(CMAKE_C_FLAGS_DEBUG "-lX11 -lGL -lpthread -lpng -lrt -lstdc++fs -std=c++17 -g")
 set(CMAKE_CXX_FLAGS "-std=c++17 -lpthread -lrt -g")

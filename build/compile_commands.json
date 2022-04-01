@@ -1,97 +1,109 @@
 [
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/type_erasure_proxy.dir/type_erasure_proxy.cpp.o -c /home/kdeoliveira/app/c++/tutorial/type_erasure_proxy.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/type_erasure_proxy.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/type_erasure_proxy.dir/type_erasure_proxy.cpp.o -c /home/dev/app/cpp_basic/type_erasure_proxy.cpp",
+  "file": "/home/dev/app/cpp_basic/type_erasure_proxy.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/type_erasure_idioms.dir/type_erasure_idioms.cpp.o -c /home/kdeoliveira/app/c++/tutorial/type_erasure_idioms.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/type_erasure_idioms.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/type_erasure_idioms.dir/type_erasure_idioms.cpp.o -c /home/dev/app/cpp_basic/type_erasure_idioms.cpp",
+  "file": "/home/dev/app/cpp_basic/type_erasure_idioms.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/variadic.dir/variadic.cpp.o -c /home/kdeoliveira/app/c++/tutorial/variadic.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/variadic.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/variadic.dir/variadic.cpp.o -c /home/dev/app/cpp_basic/variadic.cpp",
+  "file": "/home/dev/app/cpp_basic/variadic.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/basics.dir/basics.cpp.o -c /home/kdeoliveira/app/c++/tutorial/basics.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/basics.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/basics.dir/basics.cpp.o -c /home/dev/app/cpp_basic/basics.cpp",
+  "file": "/home/dev/app/cpp_basic/basics.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/type_erasure.dir/type_erasure.cpp.o -c /home/kdeoliveira/app/c++/tutorial/type_erasure.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/type_erasure.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -std=c++17 -lpthread -lrt -g -g   -o CMakeFiles/type_erasure.dir/type_erasure.cpp.o -c /home/dev/app/cpp_basic/type_erasure.cpp",
+  "file": "/home/dev/app/cpp_basic/type_erasure.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o multithread/CMakeFiles/posix_class.dir/posix_class.cpp.o -c /home/kdeoliveira/app/c++/tutorial/multithread/posix_class.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/multithread/posix_class.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -g   -o multithread/CMakeFiles/posix_class.dir/posix_class.cpp.o -c /home/dev/app/cpp_basic/multithread/posix_class.cpp",
+  "file": "/home/dev/app/cpp_basic/multithread/posix_class.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o multithread/CMakeFiles/posix_semaphore.dir/posix_semaphore.cpp.o -c /home/kdeoliveira/app/c++/tutorial/multithread/posix_semaphore.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/multithread/posix_semaphore.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -g   -o multithread/CMakeFiles/posix_semaphore.dir/posix_semaphore.cpp.o -c /home/dev/app/cpp_basic/multithread/posix_semaphore.cpp",
+  "file": "/home/dev/app/cpp_basic/multithread/posix_semaphore.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o multithread/CMakeFiles/posix_thread.dir/posix_thread.cpp.o -c /home/kdeoliveira/app/c++/tutorial/multithread/posix_thread.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/multithread/posix_thread.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -g   -o multithread/CMakeFiles/posix_thread.dir/posix_thread.cpp.o -c /home/dev/app/cpp_basic/multithread/posix_thread.cpp",
+  "file": "/home/dev/app/cpp_basic/multithread/posix_thread.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o multithread/CMakeFiles/multithread.dir/multithread.cpp.o -c /home/kdeoliveira/app/c++/tutorial/multithread/multithread.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/multithread/multithread.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -g   -o multithread/CMakeFiles/multithread.dir/multithread.cpp.o -c /home/dev/app/cpp_basic/multithread/multithread.cpp",
+  "file": "/home/dev/app/cpp_basic/multithread/multithread.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o timer/CMakeFiles/pulse.dir/pulse.cpp.o -c /home/kdeoliveira/app/c++/tutorial/timer/pulse.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/timer/pulse.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -g   -o timer/CMakeFiles/pulse.dir/pulse.cpp.o -c /home/dev/app/cpp_basic/timer/pulse.cpp",
+  "file": "/home/dev/app/cpp_basic/timer/pulse.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/message_queue.dir/message_queue.cpp.o -c /home/kdeoliveira/app/c++/tutorial/ipc/message_queue.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/ipc/message_queue.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/message_queue.dir/message_queue.cpp.o -c /home/dev/app/cpp_basic/ipc/message_queue.cpp",
+  "file": "/home/dev/app/cpp_basic/ipc/message_queue.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/shared_mem_producer.dir/shared_mem_producer.cpp.o -c /home/kdeoliveira/app/c++/tutorial/ipc/shared_mem_producer.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/ipc/shared_mem_producer.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/shared_mem_producer.dir/shared_mem_producer.cpp.o -c /home/dev/app/cpp_basic/ipc/shared_mem_producer.cpp",
+  "file": "/home/dev/app/cpp_basic/ipc/shared_mem_producer.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -I../ipc  -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/shared_mem_consumer.dir/shared_mem_consumer.cpp.o -c /home/kdeoliveira/app/c++/tutorial/ipc/shared_mem_consumer.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/ipc/shared_mem_consumer.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++   -I../ipc  -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/shared_mem_consumer.dir/shared_mem_consumer.cpp.o -c /home/dev/app/cpp_basic/ipc/shared_mem_consumer.cpp",
+  "file": "/home/dev/app/cpp_basic/ipc/shared_mem_consumer.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/pipe_fork.dir/pipe_fork.cpp.o -c /home/kdeoliveira/app/c++/tutorial/ipc/pipe_fork.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/ipc/pipe_fork.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/pipe_fork.dir/pipe_fork.cpp.o -c /home/dev/app/cpp_basic/ipc/pipe_fork.cpp",
+  "file": "/home/dev/app/cpp_basic/ipc/pipe_fork.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/signal_receive.dir/signal_receive.cpp.o -c /home/kdeoliveira/app/c++/tutorial/ipc/signal_receive.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/ipc/signal_receive.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/signal_receive.dir/signal_receive.cpp.o -c /home/dev/app/cpp_basic/ipc/signal_receive.cpp",
+  "file": "/home/dev/app/cpp_basic/ipc/signal_receive.cpp"
 },
 
 {
-  "directory": "/home/kdeoliveira/app/c++/tutorial/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/signal_event.dir/signal_event.cpp.o -c /home/kdeoliveira/app/c++/tutorial/ipc/signal_event.cpp",
-  "file": "/home/kdeoliveira/app/c++/tutorial/ipc/signal_event.cpp"
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -std=c++17 -lpthread -lrt -g -g   -o ipc/CMakeFiles/signal_event.dir/signal_event.cpp.o -c /home/dev/app/cpp_basic/ipc/signal_event.cpp",
+  "file": "/home/dev/app/cpp_basic/ipc/signal_event.cpp"
+},
+
+{
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -g   -o stdlib/CMakeFiles/stream.dir/stream.cpp.o -c /home/dev/app/cpp_basic/stdlib/stream.cpp",
+  "file": "/home/dev/app/cpp_basic/stdlib/stream.cpp"
+},
+
+{
+  "directory": "/home/dev/app/cpp_basic/build",
+  "command": "/usr/bin/c++    -g   -o stdlib/CMakeFiles/algorithm.dir/algorithm.cpp.o -c /home/dev/app/cpp_basic/stdlib/algorithm.cpp",
+  "file": "/home/dev/app/cpp_basic/stdlib/algorithm.cpp"
 }
 ]
