@@ -41,9 +41,5 @@ int main(){
 
     puts(proxy->buf);
 
-
-    
-
-
     return 0;
 }
