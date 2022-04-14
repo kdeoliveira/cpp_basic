@@ -54,6 +54,10 @@
         "any": "cpp",
         "unistd.h": "c",
         "cstring": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "bitset": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "iomanip": "cpp"
     }
 }
