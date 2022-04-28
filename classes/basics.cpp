@@ -11,7 +11,7 @@ namespace basics{   //Provides namespace for the enclosing definitions
         public:
             A();
             A(int, int);
-            // Some resources cannot or should not be copied, such as file handles or mutexes
+            // Some resources cannot or should not be copied, such as file handles or mutexes. Hence, in no presence of copy constructor the default constructor is called
             // Note that copy assignment and copy/move consturctor should be explicitly declared if the class is to acquire a resource (pointer, another object, file) - Class Wrappers or RAII idioms
             A(const A& _x) : x{_x.x}, y{_x.y}{
                 //Use std::copy if passing STL with iterators
@@ -25,20 +25,20 @@ namespace basics{   //Provides namespace for the enclosing definitions
                 swap(*this, x);
                 return *this;
             }
-            A(A&& _x) noexcept : A(){   //constructor called to initialize any default values
+            A(A&& _x) noexcept : A(){   //move constructor; should generally include noexcept
                 swap(*this, _x);
             }
 
             //Copy and swap idiom for copy/assignment
             //https://stackoverflow.com/questions/3279543/what-is-the-copy-and-swap-idiom
             friend void swap(A& first, A&second){
-                // It uses ADL to do an unqualified call any overloaded definition of swap (std::swap, or other swap defined in this namespace)
+                // It uses ADL to do an unqualified call to any overloaded definition of swap (std::swap, or other swap defined in this namespace)
+                //https://stackoverflow.com/questions/8111677/what-is-argument-dependent-lookup-aka-adl-or-koenig-lookup
                 using std::swap;
                 //Effectively swipe data members of both objects
                 swap(first.x, second.x);
                 swap(first.y, second.y);
             }
-
 
             ~A();
             int total();

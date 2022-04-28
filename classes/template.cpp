@@ -2,7 +2,7 @@
 using namespace std;
 
 //Generic template
-template <class T = int> // =int provides a default typanem in case no type is provided
+template <class T = int> // =int provides a default typename in case no type is provided
 class B{
     T value;
     public:

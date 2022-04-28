@@ -34,7 +34,7 @@ void print(T t, K...k){
 //     (Base Case): Provides a type definition only for the actual implementation of the object
 //     (Recursive Case): Actual implementation that recursively calls itself with the expanded rest arguments
 
-//Base case; in this scenario it this struct serves only as type definition for the recursive case. No implementaion required here
+//Base case; in this scenario this struct serves only as type definition for the recursive case. No implementaion required here
 template<typename...T>
 struct Tuple{};
 
@@ -42,7 +42,7 @@ struct Tuple{};
 template<typename T, typename...R>
 struct Tuple<T, R...> : public Tuple<R...>{
     Tuple() : Tuple<R...>(){}
-    //Gets first arg passed and save to tail; Then recursively call Tuple with the remaining arguments
+    //Gets first arg passed and save to tail; Then recursively call Tuple constructor with the remaining arguments
     Tuple(T t, R... r) : Tuple<R...>(r...), tail(t){}
 
     //Only the last recursive call argument will be stored inside tail

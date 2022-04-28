@@ -3,6 +3,7 @@
 #include <vector>
 #include <algorithm>
 
+
 // Note on iterators:
 // std::fn(begin_iterator, end_iterator, current_iterator)
 // ===============
@@ -10,7 +11,7 @@
 //      begin()  -> first element
 //      end()    -> last element
 // If reverse iterator provided, then iterate backward
-//      rbegin() -> for reverse order; last element
+//      rbegin() -> for reverse order; one element before last
 //      rend() -> for reverse order; first element
 
 // iterator::base() -> converts a reverse iterator to a forward iterator
@@ -27,7 +28,7 @@
 template<typename T>
 std::list<T> sort_unique_element(std::list<T> in){
 
-    //NOTE: std::set provides the same behavior as implemented in this function
+    //NOTE: std::set provides the same behavior as implemented in this function since it only contains unique ordered elements
     //Instead, could execute a std::copy to a set
 
     std::list<T> _result;
@@ -42,7 +43,7 @@ std::list<T> sort_unique_element(std::list<T> in){
     std::unique_copy(
         in.begin(),
         in.end(),
-        //Pointer to the last element of a container that accepts push_back()
+        //Allow algorithms that usually overwrite elements (such as copy ) to instead insert new elements automatically at the end of the container
         std::back_inserter(_result)
     );
 
@@ -64,7 +65,7 @@ bool has_val(const std::list<T>& container, const K& value){
 
 
 // Find All Occurrences of implementation
-// Checks all occurrence of an element in a given container and stores a poitner to its respective location
+// Checks all occurrence of an element in a given container and stores a pointer to its respective location
 template<typename T> 
 std::vector<typename std::list<T>::iterator> find_all(const std::list<T>& container, const T& element){
     std::vector<typename std::list<T>::iterator> _result;

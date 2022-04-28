@@ -21,7 +21,7 @@ class A{
 class B: public A{
     public:
         B(){}
-        //Prevents implicit conversion and assignment-like opertion on object; Ideal when polymorphism is used to prevent wrong auto conversion by the compiler
+        //Prevents implicit conversion and assignment-like operation on object; Ideal when polymorphism is used to prevent wrong auto conversion by the compiler
         //Explicit disable copy-initialization: B b = a() returns an error
         explicit B(const A& x){
             width = 0;
